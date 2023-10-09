@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Authors>Roberto Falconi</Authors>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>e3b4018f-53ef-4a3c-b3aa-06780471a989</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<IsPackable>true</IsPackable>
+		<PackageId>Fucu.MinimalAPIsTemplate</PackageId>
+		<PackageType>Template</PackageType>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Description>Complete and working ASP.NET Core Minimal APIs template</Description>
+		<PackageProjectUrl>https://github.com/RobertoFalconi/MinimalAPIsTemplate</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/RobertoFalconi/MinimalAPIsTemplate</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<Copyright>2023 Roberto Falconi</Copyright>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dapper" Version="2.0.143" />
+		<PackageReference Include="FluentValidation" Version="11.6.0" />
+		<PackageReference Include="Hangfire.AspNetCore" Version="1.8.3" />
+		<PackageReference Include="Hangfire.Core" Version="1.8.3" />
+		<PackageReference Include="Hangfire.SqlServer" Version="1.8.3" />
+		<PackageReference Include="MediatR" Version="12.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.9" />
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+		<PackageReference Include="NLog.Database" Version="5.2.2" />
+		<PackageReference Include="NLog.Extensions.Logging" Version="5.3.2" />
+		<PackageReference Include="NLog.Web.AspNetCore" Version="5.3.2" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties appsettings_1json__JsonSchema="" />
+		</VisualStudio>
+	</ProjectExtensions>
+
+</Project>
